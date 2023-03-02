@@ -2,21 +2,10 @@ package command;
 
 public class RemoteController
 {
-
 	private Command command;
 
-	public void setCommand(Command command)
-	{
-		this.command=command;
-	}
+	public void setCommand(Command command) {this.command=command;}
 
-	public void pushButton()
-	{
-		this.command.execute();
-	}
-
-	public void undoButton()
-	{
-		this.command.undo();
-	}
+	public void pushButton() {this.command.execute();}
+	public void undoButton() {this.command.undo();}
 }
